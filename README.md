@@ -11,7 +11,7 @@ Like most device drivers, the module can support several of these devices simult
 
 Locking
 -------------------
-Once a user is granted a read lock. A write lock guarantees exclusive access to the ramdisk -- no other readers or writers have access to the ramdisk.
+A write lock guarantees exclusive access to the ramdisk -- no other readers or writers have access to the ramdisk.
 
 * A request for a read lock on a ramdisk file will block until no other files on that ramdisk have a write lock.
 * A request for a write lock on a ramdisk file will block until no other files on that ramdisk have a read or write lock.
